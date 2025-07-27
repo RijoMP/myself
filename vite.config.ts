@@ -9,4 +9,5 @@ export default defineConfig({
     port: 3666,
     open: true,
   },
+   base: '/',
 })
