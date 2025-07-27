@@ -12,7 +12,7 @@ const HomeSection: React.FC = () => {
         alt="Rijo MP"
         className="w-32 h-32 rounded-full mb-4"
       />
-      <h2 className="text-3xl font-bold">Hi I'm Rijo MP</h2>
+      <h2 className="text-3xl font-bold">Hi.. I'm Rijo MP</h2>
       <p className="text-lg text-center mt-2">
         Senior Software Engineer at InApp
       </p>
