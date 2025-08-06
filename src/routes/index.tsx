@@ -1,11 +1,1 @@
-// src/routes/index.tsx
-import Profile from '../pages/profile/Profile';
-
-const routes = [
-    {
-        path: '/',
-        element: <Profile />,
-    }
-];
-
-export default routes;
+// No longer needed. All routing is handled in App.tsx with SceneRouter and Canvas context.

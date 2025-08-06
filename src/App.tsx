@@ -1,21 +1,30 @@
-// src/App.tsx
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import routes from './routes';
-import Layout from './layout/Layout';
+import React from 'react'
+import { BrowserRouter as Router, useLocation } from 'react-router-dom'
+import Layout from './layout'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Home from './pages/Home'
 
-const App: React.FC = () => {
+function SceneRouter() {
+  const location = useLocation()
+  switch (location.pathname) {
+    case '/about':
+      return <About />
+    case '/contact':
+      return <Contact />
+    default:
+      return <Home />
+  }
+}
+
+function App() {
   return (
-    <BrowserRouter>
-      <Layout>
-        <Routes>
-          {routes.map(route => (
-            <Route key={route.path} path={route.path} element={route.element} />
-          ))}
-        </Routes>
-      </Layout>
-    </BrowserRouter>
-  );
-};
+    <Layout>
+      <Router>
+        <SceneRouter />
+      </Router>
+    </Layout>
+  )
+}
 
-export default App;
+export default App
