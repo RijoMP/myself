@@ -1,5 +1,22 @@
-@import 'tailwindcss';
+/* Custom modern narrow scrollbar for tab body */
+.modern-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #facc15 #0000;
+}
+
+/* Chrome, Edge, Safari */
+.modern-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.modern-scrollbar::-webkit-scrollbar-thumb {
+  background: #facc15;
+  border-radius: 6px;
+}
+.modern-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..800;1,100..800&display=swap');
+@import 'tailwindcss';
 
 html,
 body,
@@ -35,6 +52,16 @@ body {
 .playwrite {
   font-family: 'Playwrite England SemiJoined', cursive;
   font-optical-sizing: auto;
-  font-weight: 800;
+  font-weight: 400;
+  font-style: normal;
+}
+.orbitron {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.font-typewriter {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
   font-style: normal;
 }

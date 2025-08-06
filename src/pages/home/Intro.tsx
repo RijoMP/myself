@@ -3,6 +3,8 @@ import React from 'react'
 import { LettersPullUp, TextAnimated } from '../../components/TextAnimated'
 import BrandSvg from '../../components/svgs/brand'
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa'
+import TypeWritterPaper from '../../components/TypeWritterPaper'
+import TypeWritterTwo from '../../components/TypeWritterTwo'
 
 type DivZProps = {
   index: number
@@ -11,7 +13,7 @@ type DivZProps = {
 }
 
 const Intro: React.FC<DivZProps> = ({ index, selectedIndex, key }) => (
-  <section className="w-full flex flex-col items-center justify-center" key={key}>
+  <section className="w-full flex flex-col items-center justify-center overflow-x-clip" key={key}>
     <div className="mt-10 brand-logo flex justify-center mx-6 flex-col items-center">
       {/* <RijoText text="RIJO M P" /> */}
       <motion.div
@@ -47,6 +49,36 @@ const Intro: React.FC<DivZProps> = ({ index, selectedIndex, key }) => (
           className="text-sm md:text-2xl lg:text-2xl font-[Courier_New] bg-gradient-to-r from-gray-600 via-gray-100 to-gray-700 bg-clip-text text-transparent"
         />
       </motion.div>
+      <div className="mt-6 flex flex-col items-center text-white text-[6px] w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-5xl mx-10 text-justify">
+        {/* <TypeWritterPaper
+          text="Full Stack Developer specializing in Node.js, AWS, and React, with expertise in NestJS, MongoDB, and PostgreSQL. Proven ability to build scalable APIs and responsive UIs, optimize performance, and deliver high-quality solutions. Strong collaborator with a track record of leading end-to-end projects on time. Passionate about cloud-native architecture and intuitive user experiences. Committed to clean, maintainable code and continuous learning."
+          pause={900}
+        /> */}
+
+        <TypeWritterTwo
+          sequence={[
+            'എന്റെ പേര് റിജോ , സ്ഥലം വന്നിട്ട് കോതമംഗലം ആണ് ..യ്യോ .. 🫢',
+            2000,
+            'My Name',
+            3000,
+            `I'm a Software Engineer.. `,
+            2000,
+            '',
+            2000,
+            'Full Stack Developer specializing in Node.js, AWS, and React, with expertise in NestJS, MongoDB, and PostgreSQL.',
+            2000,
+            'Full Stack Developer specializing in Node.js, AWS, and React, with expertise in NestJS, MongoDB, and PostgreSQL. Proven ability to build scalable APIs and responsive UIs, optimize performance, and deliver high-quality solutions.',
+            2000,
+            'Full Stack Developer specializing in Node.js, AWS, and React, with expertise in NestJS, MongoDB, and PostgreSQL. Proven ability to build scalable APIs and responsive UIs, optimize performance, and deliver high-quality solutions. Strong collaborator with a track record of leading end-to-end projects on time.',
+            2000,
+            'Full Stack Developer specializing in Node.js, AWS, and React, with expertise in NestJS, MongoDB, and PostgreSQL. Proven ability to build scalable APIs and responsive UIs, optimize performance, and deliver high-quality solutions. Strong collaborator with a track record of leading end-to-end projects on time. Passionate about cloud-native architecture and intuitive user experiences.',
+            2000,
+            'Full Stack Developer specializing in Node.js, AWS, and React, with expertise in NestJS, MongoDB, and PostgreSQL. Proven ability to build scalable APIs and responsive UIs, optimize performance, and deliver high-quality solutions. Strong collaborator with a track record of leading end-to-end projects on time. Passionate about cloud-native architecture and intuitive user experiences. Committed to clean, maintainable code and continuous learning.'
+          ]}
+          repeat={0}
+          className="font-typewriter"
+        />
+      </div>
     </div>
   </section>
 )

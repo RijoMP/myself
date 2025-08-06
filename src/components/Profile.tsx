@@ -7,7 +7,7 @@ import { LettersPullUp, TextAnimated } from '../components/TextAnimated'
 const Profile: React.FC = () => {
   return (
     <div>
-      <div className="mt-10 brand-logo flex justify-center mx-6 flex-col items-center">
+      <div className="mt-10 brand-logo flex justify-center mx-6 flex-col items-center w-full">
         {/* <RijoText text="RIJO M P" /> */}
         <motion.div
           initial={{ opacity: 0 }}

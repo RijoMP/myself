@@ -5,7 +5,7 @@ type DivZProps = {
   key?: string
 }
 const Contact: React.FC<DivZProps> = ({ index, selectedIndex, key }) => (
-  <section className="w-full flex flex-col items-center justify-center" key={key}>
+  <section className="w-full flex flex-col items-center justify-center overflow-x-clip" key={key}>
     <h2 className="text-3xl font-bold mb-4 text-green-400">Contact</h2>
     <div className="text-gray-200">
       Email:{' '}

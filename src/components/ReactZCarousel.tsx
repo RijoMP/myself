@@ -22,7 +22,7 @@ const ReactZCarousel: React.FC<ReactZCarouselProps> = ({ children, className = '
 
   return (
     <div className={`relative w-full h-full ${className}`} style={{ ...style }}>
-      <div className="w-[100vw] h-[100vh] flex justify-center items-center absolute">
+      <div className="w-[100vw] h-[100vh] flex justify-center items-center absolute" style={{ overflow: 'hidden' }}>
         {React.Children.map(children, (child, idx) => {
           if (!React.isValidElement(child)) return null
           const el = child as ReactElement<any>
