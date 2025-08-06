@@ -49,7 +49,7 @@ const Intro: React.FC<DivZProps> = ({ index, selectedIndex, key }) => (
           className="text-sm md:text-2xl lg:text-2xl font-[Courier_New] bg-gradient-to-r from-gray-600 via-gray-100 to-gray-700 bg-clip-text text-transparent"
         />
       </motion.div>
-      <div className="mt-6 flex flex-col items-center text-white text-[6px] w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-5xl mx-10 text-justify">
+      <div className="mt-6 flex flex-col items-center text-white text-[7px] w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-5xl mx-10 text-justify">
         {/* <TypeWritterPaper
           text="Full Stack Developer specializing in Node.js, AWS, and React, with expertise in NestJS, MongoDB, and PostgreSQL. Proven ability to build scalable APIs and responsive UIs, optimize performance, and deliver high-quality solutions. Strong collaborator with a track record of leading end-to-end projects on time. Passionate about cloud-native architecture and intuitive user experiences. Committed to clean, maintainable code and continuous learning."
           pause={900}
