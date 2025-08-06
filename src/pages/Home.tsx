@@ -3,8 +3,6 @@ import BrandSvg from '../components/svgs/brand'
 import { motion } from 'framer-motion'
 import { LettersPullUp, TextAnimated } from '../components/TextAnimated'
 import { useCanvasContext } from '../context/CanvasContext'
-//@ts-ignore
-import { Divz } from 'divz'
 import Intro from './home/Intro'
 import Contact from './home/Contact'
 import Education from './home/Education'
